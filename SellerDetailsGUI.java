@@ -74,4 +74,5 @@ class SellerDetailsGUI extends JFrame implements ActionListener {
             }
         }
     }
+
 }

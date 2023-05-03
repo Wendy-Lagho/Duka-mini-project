@@ -27,7 +27,7 @@ public class DukaGUI extends JFrame implements ActionListener {
         setLayout(new GridLayout(2, 1));
 
         JPanel panel = new JPanel();
-        panel.setBackground(Color.WHITE);
+        panel.setBackground(Color.PINK);
 
         customerButton = new JButton("Customer");
         customerButton.addActionListener(this);
@@ -45,7 +45,7 @@ public class DukaGUI extends JFrame implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == customerButton) {
-            new CustomerSearchGUI();
+            JOptionPane.showMessageDialog(this, "You clicked the customer button!");
         } else if (e.getSource() == sellerButton) {
             new SellerDetailsGUI();
         }
@@ -56,5 +56,4 @@ public class DukaGUI extends JFrame implements ActionListener {
     }
 
 }
-
 
